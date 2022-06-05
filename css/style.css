@@ -308,6 +308,7 @@ h4 {
 .picture {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 82px;
 }
 
 .picture figure {
@@ -333,4 +334,18 @@ h5 {
 footer {
     height: 252px;
     align-items: center;
+}
+
+address {
+    display: block;
+}
+
+.webstudio-down {
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
+
+.contacts-address,
+.contacts-email {
+    margin-bottom: 8px;
 }
