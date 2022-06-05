@@ -1,0 +1,336 @@
+:root {
+    --pure-white: #FFFFFF;
+    --white: #F5F4FA;
+    --grey-dark: #212121;
+    --grey: #757575;
+    --hover: #2196F3;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', 'Relaway', sans-serif;
+    font-style: normal;
+    background: #FFFFFF;
+}
+
+* {
+    list-style-type: none;
+}
+
+.nasz-zespół {
+    background: var(--white);
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--grey-dark);
+}
+
+.menu a,
+.contacts a {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+}
+
+.menu a:hover,
+.contacts a:hover {
+    color: var(--hover);
+}
+
+.contacts a {
+    color: var(--grey);
+}
+
+.webstudio-up {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+}
+
+.main-title-page {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    color: var(--pure-white);
+    background-color: #2F303A;
+}
+
+.main-title button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    display: flex;
+    color: var(--pure-white);
+    background: var(--hover);
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+}
+.second-page-button button {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--grey-dark);
+    background: var(--white);
+    border-radius: 4px;
+    font-family: inherit;
+    border: none;
+}
+
+.second-page-button button:hover {
+    background: var(--hover);
+    color: var(--pure-white);
+}
+
+.lorem-ipsum h6 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    color: var(--grey-dark);
+}
+
+.lorem-ipsum p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: var(--grey);
+}
+
+.title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    color: var(--grey-dark);
+}
+
+.John-Doe {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    color: var(--grey-dark);
+}
+
+.description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+    color: var(--grey);
+}
+
+.footer {
+    background: #2F303A;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--pure-white);
+    font-family: inherit;
+}
+
+.webstudio-down a{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--pure-white);
+}
+
+.contacts-email a,
+.contacts-telephone a {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.picture-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    color: var(--grey-dark);
+}
+.picture-title-type {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.9;
+    color: var(--grey);
+}
+
+/* position and background */
+
+img {
+    display: block;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 0 15px;
+    align-items: center;
+    margin: 0 auto;
+}
+
+header .container {
+    display:flex;
+    align-items: center;
+    height: 80px;
+    background: #FFFFFF;
+}
+
+.page-header {
+    border-bottom: 1px solid #ECECEC;
+}
+
+.webstudio-up {
+    margin-right: 93px;
+}
+
+.menu {
+    display: flex;
+}
+
+.contacts {
+    display: flex;
+}
+
+.menu-list:not(:last-child) {
+    margin-right: 46px;
+}
+
+.contacts-list:not(:last-child) {
+    margin-right: 50px;
+    margin-left: 371px;
+}
+
+.main-title button {
+    display: block;
+    width: 200px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    padding: 10px 41px 10px 42px;
+    margin: 30px auto 0;
+}
+
+.main-title {
+    padding: 200px 452px 280px 452px;
+    text-align: center;
+    background-color: #2F303A;
+    height: 600px;
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.lorem-ipsum {
+    display: flex;
+    align-items: center;
+    padding-top: 94px;
+}
+
+li p {
+    width: 270px;
+    height: 75px;
+    margin-top: 10px;
+    margin-right: 30px;
+}
+
+.occupation {
+    display: flex;
+    text-align: center;
+}
+
+.occupation li:not(:last-child) {
+    margin-right:30px;
+}
+
+h2 {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.team {
+    display: flex;
+    text-align: center;
+}
+
+h4 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.team-1 {
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    width: 270px;
+    height: 368px;
+}
+
+.team li:not(:last-of-type) {
+    margin-right: 30px;
+}
+
+.second-page-button button {
+    display: flex;
+    background: #F5F4FA;
+    border-radius: 4px;
+    padding: 6px 22px 6px 22px;
+    text-align: center;
+    margin-top: 94px;
+    margin-bottom: 50px;
+}
+
+.second-button {
+    display: flex;
+    text-align: center;
+}
+
+.second-page-button:not(:last-child) {
+    margin-right: 8px;
+}
+
+.picture {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.picture figure {
+    border: 1px solid #EEEEEE;
+}
+
+.picture li:nth-child(3n+2) {
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+
+h5 {
+    padding-left: 24px;
+    padding-top: 20px;
+}
+
+.picture-title-type {
+    margin-top: 10px;
+    margin-left: 24px;
+}
+
+footer {
+    height: 252px;
+    align-items: center;
+}
