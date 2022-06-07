@@ -197,17 +197,17 @@ header .container {
     display: flex;
 }
 
-.contacts {
-    display: flex;
-}
-
 .menu-list:not(:last-child) {
     margin-right: 46px;
 }
 
-.contacts-list:not(:last-child) {
-    margin-right: 50px;
-    margin-left: 371px;
+.contacts {
+    display: flex;
+}
+
+.contacts-list-1 {
+    padding-left: 371px;
+    padding-right: 50px;
 }
 
 .main-title button {
@@ -220,10 +220,15 @@ header .container {
 }
 
 .main-title {
+    display: flex;
     padding: 200px 452px 280px 452px;
     text-align: center;
     background-color: #2F303A;
     height: 600px;
+}
+
+.main-title-page {
+    width: 626px;
 }
 
 .section {
@@ -237,11 +242,17 @@ header .container {
     padding-top: 94px;
 }
 
-li p {
+.lorem-ipsum p {
     width: 270px;
     height: 75px;
-    margin-top: 10px;
+}
+
+.lorem-ipsum li {
     margin-right: 30px;
+}
+
+.lorem-ipsum h6 {
+    margin-bottom: 10px;
 }
 
 .occupation {
@@ -313,12 +324,18 @@ h4 {
 
 .picture figure {
     border: 1px solid #EEEEEE;
+    width: 370px ;
+    height: 404px;
 }
 
 .picture li:nth-child(3n+2) {
-    margin-right: 15px;
-    margin-left: 15px;
-    margin-bottom: 15px;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+.picture li:nth-last-child(5),
+.picture li:nth-last-child(8) {
+    margin-bottom: 30px;
 }
 
 h5 {
@@ -338,6 +355,7 @@ footer {
 
 address {
     display: block;
+    font: inherit;
 }
 
 .webstudio-down {
