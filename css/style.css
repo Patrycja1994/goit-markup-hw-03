@@ -30,7 +30,6 @@ body {
 
 a {
     text-decoration: none;
-    cursor: pointer;
     color: var(--grey-dark);
 }
 
@@ -38,7 +37,6 @@ a {
 .contacts a {
     font-weight: 500;
     font-size: 14px;
-    line-height: 1.14;
 }
 
 .menu a:hover,
@@ -63,7 +61,6 @@ a {
     line-height: 1.36;
     text-align: center;
     color: var(--pure-white);
-    background-color: #2F303A;
 }
 
 .main-title button {
@@ -108,7 +105,8 @@ a {
     color: var(--grey);
 }
 
-.title {
+.title,
+.customers {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -145,11 +143,6 @@ a {
     font-size: 26px;
     line-height: 1.19;
     color: var(--pure-white);
-}
-
-.contacts-email a,
-.contacts-telephone a {
-    color: rgba(255, 255, 255, 0.6);
 }
 
 .picture-title {
@@ -195,19 +188,11 @@ header .container {
 
 .menu {
     display: flex;
+    margin-right: 300px;
 }
 
 .menu-list:not(:last-child) {
     margin-right: 46px;
-}
-
-.contacts {
-    display: flex;
-}
-
-.contacts-list-1 {
-    padding-left: 371px;
-    padding-right: 50px;
 }
 
 .main-title button {
@@ -224,6 +209,12 @@ header .container {
     text-align: center;
     align-items: center;
     background-color: #2F303A;
+    background-image:
+        linear-gradient(rgba(47, 48, 58, 0.4),
+                        rgba(47, 48, 58, 0.4)),
+                         url("/images/tło.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 600px;
 }
 
@@ -239,7 +230,6 @@ header .container {
 .lorem-ipsum {
     display: flex;
     align-items: center;
-    padding-top: 94px;
 }
 
 .lorem-ipsum p {
@@ -274,12 +264,17 @@ h3 {
     margin-bottom: 50px;
 }
 
-.team {
-    display: flex;
+.customers {
     text-align: center;
 }
 
-h4 {
+.team {
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.John-Doe {
     margin-top: 30px;
     margin-bottom: 10px;
     text-align: center;
@@ -290,10 +285,10 @@ h4 {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     width: 270px;
-    height: 368px;
+    height: 428px;
 }
 
-.team li:not(:last-of-type) {
+.team-members-1:not(:last-of-type) {
     margin-right: 30px;
 }
 
@@ -320,6 +315,16 @@ h4 {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 82px;
+}
+
+.pictures:hover {
+    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16),
+                0px 4px 4px rgba(0, 0, 0, 0.06),
+                0px 1px 1px rgba(0, 0, 0, 0.12);
+}
+
+.pictures {
+    cursor: pointer;
 }
 
 .picture figcaption {
@@ -368,4 +373,190 @@ address {
 .contacts-address,
 .contacts-email {
     margin-bottom: 8px;
+}
+
+.social-icons {
+    width: 20px;
+    height: 20px;
+}
+
+.social-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 12px;
+}
+
+.social-link-item {
+    display: block;
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+}
+
+.social-icons {
+    fill:#AFB1B8;
+}
+
+.social-link-item:hover svg {
+    fill:#FFFFFF
+}
+
+.social-link-item:hover {
+    background-color: var(--hover);
+}
+
+.social-icons {
+    margin: 12px;
+}
+
+.social-list-item-menu:hover {
+   color: var(--hover);
+   fill: var(--hover);
+}
+
+.contacts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.menu-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-icons-telephone {
+    display: block;
+    fill: #757575;
+    max-width: 16px;
+    max-height: 16px;
+    margin-left: 30px;
+    margin-right: 10px;
+}
+
+.menu-icons-poczta {
+    display: block;
+    fill:#757575;
+    max-width: 16px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.menu-icons:hover {
+    color:var(--hover)
+}
+
+.menu-icons:hover svg {
+    fill: var(--hover)
+}
+
+.lorem-ipsum-picture {
+    display: flex;
+    justify-content: space-between;
+}
+
+.lorem-ipsum-picture-1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 270px;
+        height: 120px;
+        background-color: #F5F4FA;
+        margin-top: 94px;
+        margin-bottom: 30px;
+}
+
+.lorem-ipsum-picture-item-above{
+    width: 65.32px;
+    height: 70px;
+}
+
+.lorem-ipsum-picture-item {
+    cursor: default;
+}
+
+.our-customers {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 94px;
+}
+
+.customers {
+    margin-top: 50px;
+}
+
+.our-customers-items {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    height: 92px;
+    width: 170px;
+    margin-top: 50px;
+    border: 1px solid #AFB1B8; border-radius:4px;
+    cursor: pointer;
+}
+
+.our-customers-icons  {
+    margin: 16px 32px;
+    max-height: 52px;
+    max-width: 94px;
+    display: block;
+    fill: #AFB1B8;
+}
+
+.our-customers-icons {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.our-customers-items:hover {
+    background-color: var(--pure-white);
+    border: 1px solid var(--hover);
+}
+
+.our-customers-items:hover svg{
+    fill: var(--hover);
+}
+
+.join-us-footer-icons {
+    width: 20px;
+    height: 20px;
+}
+.join-us-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: #FFFFFF;
+}
+
+.join-us{
+    background-color: rgba(255, 255, 255, 0.1);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+}
+
+.join-us-list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-list-item-menu{
+    display: flex;
+    fill: #757575;
+}
+
+.join-us:hover {
+    background-color: var(--hover);
+}
+
+.contact-2 a {
+    color: rgba(255, 255, 255, 0.6)
 }
